@@ -1,0 +1,14 @@
+* text=auto
+
+*.sln text eol=crlf
+*.csproj text eol=crlf
+*.manifest text eol=crlf
+
+*.ttf binary
+*.otf binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.webp binary

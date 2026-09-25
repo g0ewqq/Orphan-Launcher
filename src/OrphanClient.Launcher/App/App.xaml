@@ -1,0 +1,15 @@
+<Application x:Class="OrphanClient.Launcher.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             ShutdownMode="OnMainWindowClose">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/OrphanClient.Launcher;component/UI/Theme/Colors.xaml" />
+                <ResourceDictionary Source="/OrphanClient.Launcher;component/UI/Theme/Typography.xaml" />
+                <ResourceDictionary Source="/OrphanClient.Launcher;component/UI/Theme/Surfaces.xaml" />
+                <ResourceDictionary Source="/OrphanClient.Launcher;component/UI/Theme/Controls.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>OrphanClient.Launcher</RootNamespace>
+    <AssemblyName>OrphanClient.Launcher</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Product>OrphanClient Launcher</Product>
+    <AssemblyTitle>OrphanClient Launcher</AssemblyTitle>
+    <Description>OrphanClient Launcher</Description>
+    <Company>OrphanClient</Company>
+    <Version>1.0.0</Version>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="App\App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="..\..\assets\Fonts\*.ttf" Link="Assets\Fonts\%(Filename)%(Extension)" />
+    <Resource Include="..\..\assets\Images\background.jpg" Link="Assets\Images\background.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,78 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="WindowBrush" Color="#FF120E0F" />
+
+    <LinearGradientBrush x:Key="BackgroundFallbackBrush" StartPoint="0,0" EndPoint="0.4,1">
+        <GradientStop Color="#FF1B1516" Offset="0" />
+        <GradientStop Color="#FF120E0F" Offset="0.55" />
+        <GradientStop Color="#FF0B0809" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ScrimTopBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#B3120E0F" Offset="0" />
+        <GradientStop Color="#73120E0F" Offset="0.3" />
+        <GradientStop Color="#00120E0F" Offset="0.7" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ScrimBottomBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#00120E0F" Offset="0.35" />
+        <GradientStop Color="#40120E0F" Offset="0.7" />
+        <GradientStop Color="#8C120E0F" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ScrimLeftBrush" StartPoint="0,0.5" EndPoint="0.25,0.5">
+        <GradientStop Color="#66120E0F" Offset="0" />
+        <GradientStop Color="#00120E0F" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ScrimRightBrush" StartPoint="0.75,0.5" EndPoint="1,0.5">
+        <GradientStop Color="#00120E0F" Offset="0" />
+        <GradientStop Color="#66120E0F" Offset="1" />
+    </LinearGradientBrush>
+
+    <RadialGradientBrush x:Key="SpotlightBrush" Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+        <GradientStop Color="#4DFF3B4A" Offset="0" />
+        <GradientStop Color="#24FF3B4A" Offset="0.45" />
+        <GradientStop Color="#00FF3B4A" Offset="1" />
+    </RadialGradientBrush>
+
+    <SolidColorBrush x:Key="GlassBrush" Color="#C0120E0F" />
+    <SolidColorBrush x:Key="GlassRaisedBrush" Color="#D91E1819" />
+    <SolidColorBrush x:Key="GlassHoverBrush" Color="#E62A2324" />
+    <SolidColorBrush x:Key="GlassBorderBrush" Color="#26FFFFFF" />
+    <SolidColorBrush x:Key="GlassBorderStrongBrush" Color="#4DFFFFFF" />
+    <SolidColorBrush x:Key="HairlineBrush" Color="#1FFFFFFF" />
+
+    <SolidColorBrush x:Key="InputBackgroundBrush" Color="#C9120E0F" />
+
+    <SolidColorBrush x:Key="BorderBrush" Color="#FF3B3133" />
+
+    <SolidColorBrush x:Key="PrimaryBrush" Color="#FFEE2F3E" />
+    <SolidColorBrush x:Key="PrimaryHoverBrush" Color="#FFFF4453" />
+    <SolidColorBrush x:Key="PrimaryPressedBrush" Color="#FFC2212E" />
+    <SolidColorBrush x:Key="PrimaryBorderBrush" Color="#FFFF5C68" />
+    <SolidColorBrush x:Key="PrimarySoftBrush" Color="#33EE2F3E" />
+    <SolidColorBrush x:Key="PrimaryDimBrush" Color="#59EE2F3E" />
+    <SolidColorBrush x:Key="PrimaryDisabledBrush" Color="#FF5F5556" />
+
+    <LinearGradientBrush x:Key="PrimaryFillBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFF73B4A" Offset="0" />
+        <GradientStop Color="#FFDE2534" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="PrimaryFillHoverBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFFF5563" Offset="0" />
+        <GradientStop Color="#FFEB3240" Offset="1" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#FFC4B9BA" />
+    <SolidColorBrush x:Key="TextMutedBrush" Color="#FF8E8284" />
+    <SolidColorBrush x:Key="TextDisabledBrush" Color="#FF6A5F61" />
+
+    <SolidColorBrush x:Key="WarningBrush" Color="#FFE0A24A" />
+    <SolidColorBrush x:Key="CloseHoverBrush" Color="#FFE81123" />
+    <SolidColorBrush x:Key="ClosePressedBrush" Color="#FFB10D1B" />
+
+</ResourceDictionary>

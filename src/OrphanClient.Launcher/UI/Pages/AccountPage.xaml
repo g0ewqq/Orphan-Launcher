@@ -1,0 +1,107 @@
+<UserControl x:Class="OrphanClient.Launcher.UI.Pages.AccountPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+        <Grid Margin="40,22,40,22">
+            <StackPanel MaxWidth="1000">
+                <TextBlock Style="{StaticResource EyebrowTextStyle}" Text="ACCOUNT" />
+                <TextBlock Margin="0,10,0,0" Style="{StaticResource PageTitleTextStyle}" Text="Account" />
+                <TextBlock Margin="0,10,0,0"
+                           MaxWidth="620"
+                           HorizontalAlignment="Left"
+                           Style="{StaticResource BodyTextStyle}"
+                           Text="Connect a Discord account to keep your OrphanClient identity available on this machine." />
+
+                <Border Margin="0,24,0,0" Style="{StaticResource GlassPanelStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Width="52"
+                                Height="52"
+                                VerticalAlignment="Center"
+                                Background="{StaticResource PrimarySoftBrush}"
+                                BorderBrush="{StaticResource PrimaryDimBrush}"
+                                BorderThickness="1"
+                                CornerRadius="26">
+                            <TextBlock HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontFamily="{StaticResource DisplayFontFamily}"
+                                       FontSize="19"
+                                       FontWeight="SemiBold"
+                                       Foreground="{StaticResource PrimaryBrush}"
+                                       Text="D" />
+                        </Border>
+
+                        <StackPanel Grid.Column="1" Margin="16,0,16,0" VerticalAlignment="Center">
+                            <TextBlock x:Name="ProviderText" Style="{StaticResource CardTitleTextStyle}" />
+                            <StackPanel Margin="0,7,0,0" Orientation="Horizontal">
+                                <Ellipse x:Name="AccountStatusDot" Style="{StaticResource StatusDotStyle}" />
+                                <TextBlock x:Name="AccountStatusText"
+                                           Margin="7,0,0,0"
+                                           VerticalAlignment="Center"
+                                           Style="{StaticResource SecondaryInfoTextStyle}" />
+                            </StackPanel>
+                        </StackPanel>
+
+                        <Button x:Name="ConnectButton"
+                                Grid.Column="2"
+                                VerticalAlignment="Center"
+                                Click="OnConnectClick"
+                                Style="{StaticResource SecondaryButtonStyle}" />
+                    </Grid>
+                </Border>
+
+                <TextBlock x:Name="ConnectResultText"
+                           Margin="0,14,0,0"
+                           Style="{StaticResource StatusTextStyle}" />
+
+                <Border Margin="0,12,0,0" Style="{StaticResource GlassPanelStyle}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource SectionTitleTextStyle}" Text="SIGN-IN" />
+                        <Grid Margin="0,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0"
+                                       VerticalAlignment="Center"
+                                       Style="{StaticResource MetricLabelTextStyle}"
+                                       Text="PROVIDER" />
+                            <TextBlock Grid.Column="1"
+                                       Margin="14,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Style="{StaticResource PrimaryInfoTextStyle}"
+                                       Text="Discord" />
+                        </Grid>
+                        <Grid Margin="0,12,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0"
+                                       VerticalAlignment="Center"
+                                       Style="{StaticResource MetricLabelTextStyle}"
+                                       Text="LINKED ACCOUNT" />
+                            <TextBlock Grid.Column="1"
+                                       Margin="14,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Style="{StaticResource PrimaryInfoTextStyle}"
+                                       Text="None" />
+                        </Grid>
+                        <Border Margin="0,17,0,0" Style="{StaticResource HairlineBorderStyle}" />
+                        <TextBlock Margin="0,13,0,0"
+                                   Style="{StaticResource CaptionTextStyle}"
+                                   Text="OrphanClient does not request or store account credentials in this build."
+                                   TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</UserControl>
