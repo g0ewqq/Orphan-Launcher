@@ -99,7 +99,7 @@ work can be added without redesigning it.
 Clone the repository and build the solution:
 
 ```
-git clone https://github.com/<owner>/OrphanClient.Launcher.git
+git clone https://github.com/g0ewqq/OrphanClient.Launcher.git
 cd OrphanClient.Launcher
 dotnet build OrphanClient.Launcher.sln -c Debug
 ```
